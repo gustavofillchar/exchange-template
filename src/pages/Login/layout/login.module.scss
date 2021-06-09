@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background:#212F41;
+    background-image: url('../../../assets/images/bg-coins.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.boxContainer{
+    width: 600px;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba($color: #212F41, $alpha: 0.95);        
+
+    .actionBox{
+        padding: 20px;
+
+
+        img{
+            height: 50px;
+        }
+    }
+}
