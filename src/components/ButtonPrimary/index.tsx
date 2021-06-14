@@ -1,13 +1,15 @@
 import React from 'react';
-
+import cx from 'classnames'
 import style from './buttonprimary.module.scss';
 
 type ButtonProps = {
-  children: string
+  children: string,
+  transparency: boolean,
+  onPress(): void
 }
 
-const ButtonPrimary: React.FC<ButtonProps> = ({children} : ButtonProps) => {
-  return <button className={style.btn}>{children}</button>
+const ButtonPrimary: React.FC<ButtonProps> = ({children, transparency, onPress} : ButtonProps) => {
+  return <button onClick={onPress} className={cx(transparency ? style.btnTransparency : style.btn)}>{children}</button>
 }
 
 export default ButtonPrimary;

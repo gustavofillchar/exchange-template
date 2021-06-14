@@ -1,18 +1,55 @@
 .btn{
-    padding: 15px 30px 13px 30px;
+    user-select: none;
+    padding: 15px 35px;
     border-radius: 100px;
     border:none;
     color: #fff;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     cursor: pointer;
     background: #60BC3F;
     transition: 250ms;
     letter-spacing: 0.78px;
+    margin: 15px 0 0 0;
 }
 
 .btn:hover{
-    background: #468a2e;
+    background: #4d9732;
     transition: 250ms;
+}
+
+.btn:active{
+    transition: 50ms;
+    background: #60BC3F;
+    top: -1.5px;
+    position: relative;
+}
+
+// // // //
+
+.btnTransparency{
+    user-select: none;
+    padding: 10px 35px;
+    border-radius: 100px;
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 250ms;
+    letter-spacing: 0.78px;
+    margin: 15px 0 0 0;
+    background: transparent;
+}
+
+.btnTransparency:hover{
+    transition: 250ms;
+}
+
+.btnTransparency:active{
+    transition: 50ms;
+    top: -1.5px;
+    position: relative;
 }

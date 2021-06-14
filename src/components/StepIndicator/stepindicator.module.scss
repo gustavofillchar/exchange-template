@@ -1,0 +1,23 @@
+.container{
+    width:450px;
+    margin: 20px 0 0 0;
+    display: flex;
+
+    .stepItem{
+        transition: 1000ms all;
+        width: 100%;
+        margin-right: 5px;
+        height: 8px;
+        background: rgba($color: #fff, $alpha: 0.1);
+        border-radius: 5px;
+    }
+
+    .stepItem:last-child{
+        margin-right: 0;
+    }
+
+    .stepChecked{
+        transition: 1000ms all;
+        background: #60BC3F;
+    }
+}
