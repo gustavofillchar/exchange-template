@@ -1,0 +1,138 @@
+.container{
+    background: #2C405A;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #425b7c;
+    padding:0 10px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 5;
+
+    .logoArea{
+        img{
+            max-height: 35px;
+            width: auto;
+        }
+    }
+
+    .actionBox{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        .iconAction{
+            cursor: pointer;
+            width: 40px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:0 10px;
+            border-left: 1.2px solid rgba($color: #fff, $alpha: 0.2);    
+            border-right: 1.2px solid rgba($color: #fff, $alpha: 0.2); 
+            transition: 0.3s;
+        }
+        .iconAction:hover{
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+        .iconAction:first-child{
+            padding:0 10px;
+            border-left: 1.2px solid rgba($color: #fff, $alpha: 0.2);    
+            border-right: none;    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profileFigureAction{
+            user-select: none;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.3s;    
+            position: relative;        
+
+            img{
+                height: 35px;
+                width: 35px;
+                border-radius: 5px;
+                pointer-events: all;
+                transition: 0.3s;
+            }
+
+            img:hover{
+                opacity: 0.8;
+                transition: 0.3s;
+            }
+                        
+            h6{
+                margin:0 10px;
+                color: #fff;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            h6:hover{
+                opacity: 0.5;
+                transition: 0.3s;
+            }
+
+            .arrowAction{
+                cursor: pointer;
+                height: 10px;
+                width: 10px;
+                background: url("../../assets/images/arrowdown.svg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: 0.3s;
+            }
+            .arrowAction:hover{
+                opacity: 0.5;
+                transition: 0.3s;
+            }
+            
+            .optionsMenu{
+                position: absolute;
+                top: 42px;
+                right: 0;
+                background: #567297;
+                width: 100%;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                transition: 200ms all;
+                opacity: 0;
+                visibility: hidden;
+
+                a{
+                    color: #fff;
+                    padding:20px;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                a:hover{
+                    background: #4b678d;
+                    border-radius: 4px;
+                }
+                a:nth-child(1){
+                    border-bottom: solid 1px rgba($color: #fff, $alpha: 0.2);
+                }
+            }
+            .optionsMenuCollapsed{
+                transition: 200ms all;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+    }
+}

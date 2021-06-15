@@ -6,7 +6,7 @@ const SignUp: React.FC = () => {
   let history = useHistory();
   
   const goToSignIn = () => {
-    history.push("/");
+    history.push("/signin");
   }
   return <Layout goToSignIn={goToSignIn}/>
 }

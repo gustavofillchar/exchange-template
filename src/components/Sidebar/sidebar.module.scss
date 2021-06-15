@@ -1,0 +1,36 @@
+.container{
+    position: fixed;
+    top: 60px;
+    width: 80px;
+    height: calc(100vh - 60px);
+    left: 0;
+    box-sizing: border-box;
+    background: #1C293B;
+    transition: 300ms all;
+    z-index: 2;
+}
+
+.sideOpen{
+    width: 220px;
+    transition: 300ms all;
+}
+
+.backLayer{
+    transition: 300ms all;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: #000, $alpha: 0.4);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.backLayerOpen{
+    transition: 300ms all;
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: blur(4px); 
+}
