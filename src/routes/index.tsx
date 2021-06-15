@@ -17,17 +17,48 @@ export default function Routes() {
 
     const Logged = () => {
       return (
+        <>
+          <AppBar/>
+          <Sidebar/>
         <Switch>
 
-          <Route path="/">
-            <AppBar/>
-            <Sidebar/>
-            <InternContainer>
+        <InternContainer>
+          <Route path="/dashboard">
               <Dashboard />
-            </InternContainer>
           </Route>
 
+          <Route path="/market">
+              <div>market</div>
+          </Route>
+
+          <Route path="/wallet">
+              <div>wallets</div>
+          </Route>
+
+          <Route path="/orders">
+              <div>orders</div>
+          </Route>
+
+          <Route path="/extract">
+              <div>extract</div>
+          </Route>
+
+          <Route path="/deposit">
+              <div>deposit</div>
+          </Route>
+
+          <Route path="/withdraw">
+              <div>withdraw</div>
+          </Route>
+
+          <Route path="/help">
+              <div>ajuda</div>
+          </Route>
+
+        </InternContainer>
+
         </Switch>
+        </>
       );      
     }
 
@@ -35,7 +66,7 @@ export default function Routes() {
       <Router>
           <Switch>
 
-          <Route path="/home" >
+          <Route path="/" >
               <Logged />
             </Route>
             
