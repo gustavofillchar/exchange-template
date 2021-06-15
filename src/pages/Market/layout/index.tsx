@@ -1,60 +1,60 @@
 import React from 'react';
-import style from './dashboard.module.scss'
+import style from './market.module.scss'
 import cx from "classnames"
 
-type LayoutPropsDashboard = {
+type LayoutPropsMarket = {
   
 }
 
-const Layout: React.FC<LayoutPropsDashboard> = ({}:LayoutPropsDashboard) => {
+const Layout: React.FC<LayoutPropsMarket> = ({}:LayoutPropsMarket) => {
   return (
     <div>
       <div className="container-fluid">
 
         <div className="row">
 
-          <div className="col-md-4">
+          <div className="col-md-12">
 
             <div className={style.tableContainer}>
               <div className={style.tableItem}>
-                saldo
-              </div>
-
-              <div className={style.tableItem}>
-                oscilação
-              </div>
-
-            </div>
-
-          </div>
-
-          <div className="col-md-8">
-            <div className={style.tableContainer}>
-              <div className={style.tableItem}>
-                movimentaçao
+                mercado (grafico)
               </div>
             </div>
+
           </div>
 
         </div>
 
         <div className="row">
 
-          <div className="col-md-6">
-
+          <div className="col-md-3">
             <div className={style.tableContainer}>
               <div className={style.tableItem}>
-                saldo
+                negociação
               </div>
-
             </div>
-
           </div>
 
-          <div className="col-md-6">
+          <div className="col-md-3">
             <div className={style.tableContainer}>
               <div className={style.tableItem}>
-                movimentaçao
+                ordens de compra
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className={style.tableContainer}>
+              <div className={style.tableItem}>
+                ordens de venda
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className={style.tableContainer}>
+              <div className={style.tableItem}>
+                minhas ordens
               </div>
             </div>
           </div>

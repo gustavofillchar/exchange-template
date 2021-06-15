@@ -4,4 +4,14 @@
     left: 80px;
     right: 0;
     z-index: 0;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    width: 1280px;
+    width: calc(100% - 80px);
+    margin: 0;
+    
+    @media(min-width: 1925px) {
+        margin: 0 auto;
+        width: 1600px;
+    }
 }
