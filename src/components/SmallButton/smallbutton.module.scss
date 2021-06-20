@@ -1,0 +1,53 @@
+.btn{
+    user-select: none;
+    padding: 8px 10px;
+    border-radius: 100px;
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 9px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 250ms;
+    letter-spacing: 0.78px;
+}
+
+.btn:hover{
+    transition: 250ms;
+}
+
+.btn:active{
+    transition: 50ms;
+    top: -1.5px;
+    position: relative;
+}
+
+.green{
+    background: #60BC3F;
+}
+.green:hover{
+    background: #4d9732;
+}
+.green:active{
+    background: #60BC3F;
+}
+
+.red{
+    background: #883535;
+}
+.red:hover{
+    background: #5a2020;
+}
+.red:active{
+    background: #883535;
+}
+
+.blue{
+    background: #3272B2;
+}
+.blue:hover{
+    background: #174879;
+}
+.blue:active{
+    background: #3272B2;
+}

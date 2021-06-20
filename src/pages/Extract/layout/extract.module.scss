@@ -1,0 +1,14 @@
+.tableContainer{
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .tableItem{
+        width: 100%;
+        background: #26374C;
+        border: 1px solid rgba($color: #fff, $alpha: 0.08);
+        border-radius: 5px;
+        height: 100%;
+    }
+}

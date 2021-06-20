@@ -13,7 +13,7 @@
     align-items: center;
 
     .headerHandleMenu{
-        padding: 25px 0;
+        padding: 32px 0;
         cursor: pointer;
     }
 
@@ -150,6 +150,6 @@
     transition: 300ms all;
     opacity: 1;
     visibility: visible;
-    backdrop-filter: blur(6px); 
-    background-color: rgba($color: #0093EE, $alpha: 0.03);
+    backdrop-filter: blur(9px); 
+    background-color: rgba($color: #0093EE, $alpha: 0);
 }

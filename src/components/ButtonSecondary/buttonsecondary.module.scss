@@ -1,0 +1,55 @@
+.btn{
+    user-select: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #60BC3F;
+    transition: 250ms;
+    letter-spacing: 0.78px;
+    margin: 0 10px;
+}
+
+.btn:hover{
+    background: #4d9732;
+    transition: 250ms;
+}
+
+.btn:active{
+    transition: 50ms;
+    background: #60BC3F;
+    top: -1.5px;
+    position: relative;
+}
+
+.btnBlue{
+    user-select: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #3272B2;
+    transition: 250ms;
+    letter-spacing: 0.78px;
+    margin: 0 10px;
+}
+
+.btnBlue:hover{
+    background: #275c92;
+    transition: 250ms;
+}
+
+.btnBlue:active{
+    transition: 50ms;
+    background: #3272B2;
+    top: -1.5px;
+    position: relative;
+}

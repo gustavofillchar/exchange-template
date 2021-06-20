@@ -1,0 +1,148 @@
+.container{
+    position: relative;
+
+    .header{
+        height: 40px;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.08);
+        position: absolute;
+        right: 0;
+        left: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+
+        h3{
+            color: #fff;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-right: 12px;
+        }
+    }
+    
+    .containerItem{
+        position: absolute;
+        top: 40px;
+        height: max-content;
+        overflow-x: auto;
+        box-sizing: border-box;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        .selectBankContainer{
+            height: auto;
+            width: 100%;
+            position: relative;
+            border-bottom: 1px solid rgba($color: #fff, $alpha: 0.08);
+            
+            .iconLeft{
+                position: absolute;
+                transform: translateY(-50%);
+                left: 6px;
+                top: 50%;
+                height: 22px;
+                width: 12px;
+                cursor: pointer;
+                background-image: url("../../assets/icons/iconArrowScroll.svg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .iconRight{
+                position: absolute;
+                right: 6px;
+                top: 50%;
+                height: 22px;
+                width: 12px;
+                cursor: pointer;
+                background-image: url("../../assets/icons/iconArrowScroll.svg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transform: rotate(180deg) translateY(50%);
+            }
+
+            .bankItem{
+                margin: 0 26px;
+                padding: 26px 13px;                
+                display: flex;
+                align-items: center;
+                
+                .bankImage{
+                    height: 80px;
+                    width: 80px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                .descriptionBox{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 13px;
+
+                    span{
+                        font-size: 14px;
+                        color: #fff;
+                        margin: 0 0 7px 0;
+                        font-weight: 300;
+                        b{
+                            font-weight: 600;
+                        }
+                    }
+                    span:last-child{
+                        margin: 0;
+                    }
+                }
+
+            }
+        }
+
+        .infoDepositContainer{
+            padding: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+
+            h4{
+                font-weight: 600;
+                font-size: 16px;
+            }
+            p{
+                margin: 16px 0;                
+            }
+
+            .inputValue{
+                border: 1.5px solid rgba($color: #fff, $alpha: 0.1);
+                background: transparent;
+                border-radius: 6px;
+                padding: 8px;
+                color: #fff;
+            }
+
+            .inputValue::placeholder{
+                color: rgba($color: #fff, $alpha: 0.2);
+            }
+            
+            .fileInput{
+                border: 1.5px solid rgba($color: #fff, $alpha: 0.1);
+                padding: 16px;
+                border-radius: 8px;
+                margin: 16px 0 0 0;
+            }
+
+            button{
+                margin: 16px 0 0 0;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+.container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: auto;
+    top: 0;
+
+    .header{
+        height: 40px;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.08);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        position: sticky;
+        top: 0;
+
+        h3{
+            color: #fff;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    }
+    
+    .tableContainer{
+        height: 100%;
+        top: 40px;
+        box-sizing: content-box;
+    }
+
+    .seeMoreButton{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding: 22px 0;
+    }
+}

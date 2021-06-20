@@ -1,0 +1,15 @@
+.container{
+    display: flex;   
+    
+    span{
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
+.positive{
+    color:#60BC3F;
+}
+.negative{
+    color:#FF0000;
+}

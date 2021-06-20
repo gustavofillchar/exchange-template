@@ -2,6 +2,12 @@ import React from 'react';
 import style from './dashboard.module.scss'
 import cx from "classnames"
 
+import Balance from "../../../components/Balance"
+import OscillationChart from "../../../components/OscillationChart"
+import HistoryMovement from "../../../components/HistoryMovement"
+import MyWallets from '../../../components/MyWallets';
+import CoinsTable from '../../../components/CoinsTable';
+
 type LayoutPropsDashboard = {
   
 }
@@ -13,25 +19,25 @@ const Layout: React.FC<LayoutPropsDashboard> = ({}:LayoutPropsDashboard) => {
 
         <div className="row">
 
-          <div className="col-md-4">
+          <div className="col-lg-3 col-sm-12">
 
             <div className={style.tableContainer}>
               <div className={style.tableItem}>
-                saldo
+                <Balance/>
               </div>
 
               <div className={style.tableItem}>
-                oscilação
+                <OscillationChart/>
               </div>
 
             </div>
 
           </div>
 
-          <div className="col-md-8">
+          <div className="col-lg-9">
             <div className={style.tableContainer}>
               <div className={style.tableItem}>
-                movimentaçao
+                <HistoryMovement/>
               </div>
             </div>
           </div>
@@ -44,7 +50,7 @@ const Layout: React.FC<LayoutPropsDashboard> = ({}:LayoutPropsDashboard) => {
 
             <div className={style.tableContainer}>
               <div className={style.tableItem}>
-                saldo
+                <MyWallets/>
               </div>
 
             </div>
@@ -54,7 +60,7 @@ const Layout: React.FC<LayoutPropsDashboard> = ({}:LayoutPropsDashboard) => {
           <div className="col-md-6">
             <div className={style.tableContainer}>
               <div className={style.tableItem}>
-                movimentaçao
+                <CoinsTable/>
               </div>
             </div>
           </div>

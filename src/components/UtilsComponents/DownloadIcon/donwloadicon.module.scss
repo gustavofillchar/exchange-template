@@ -1,0 +1,17 @@
+.icon{
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../../../assets/icons/download.svg");
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.icon:hover{
+    opacity: 0.8;
+    transition: 200ms;
+}
