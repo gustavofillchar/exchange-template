@@ -1,0 +1,201 @@
+.container{
+    position: relative;
+
+    .header{
+        height: 40px;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.08);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+
+        h3{
+            color: #fff;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+    }
+
+    .contain{
+        padding: 10px;
+        .selectButtons{
+            display: flex;
+
+            button{
+                width: 100%;
+                user-select: none;
+                padding:10px;
+                border:none;
+                color: #fff;
+                font-weight: 600;
+                font-size: 10px;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: 250ms;
+                letter-spacing: 0.78px;
+            }
+
+            button:first-child{
+                border-radius: 5px 0 0 5px;
+            }
+            button:last-child{
+                border-radius: 0 5px 5px 0;
+            }
+        }
+        .buySelect{
+            .btnBuy{
+                background: #60BC3F;
+            }
+            .btnSell{
+                background: #1c2a3b;
+                color: rgba($color: #fff, $alpha: 0.2);
+            }
+        }
+        .sellSelect{
+            .btnBuy{
+                background: #1c2a3b;
+                color: rgba($color: #fff, $alpha: 0.2);
+            }
+            .btnSell{
+                background: #883535;
+            }
+        }
+
+        .balanceStatus{
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom: 1px solid rgba($color: #fff, $alpha: 0.08);
+            padding: 14px 0;
+
+            span{
+                margin: 0 0 8px 0;
+                font-size: 12px;
+                color:rgba($color: #fff, $alpha: 0.6);
+            }
+            h3{
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        .unitPriceContain{
+            display: flex;
+            flex-direction: column;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba($color: #fff, $alpha: 0.08);
+
+            label{
+                font-size: 12px;
+                color: #fff;
+                margin: 0 0 8px 0;
+                color: rgba($color: #fff, $alpha: 0.9);
+                font-weight: 600;
+                
+            }
+            input{
+                background: #40546D;
+                border: none;
+                color: #fff;
+                padding: 12px;
+                border-radius: 4px;
+                outline: none;
+                font-size: 14px;
+            }
+            input::placeholder{
+                color: rgba($color: #fff, $alpha: 0.5);
+            }
+
+            
+        }
+
+        .actionButton{
+            width: 100%;
+            user-select: none;
+            padding:10px;
+            border:none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 250ms;
+            letter-spacing: 0.78px;
+            border-radius: 5px;
+        }
+        .buySelected{
+            background: #60BC3F;
+        }
+        .sellSelected{
+            background: #883535;
+        }
+        
+        .typeOrderContain{
+            display: flex;
+            flex-direction: column;
+            padding: 14px 0;
+
+            label{
+                font-size: 12px;
+                color: #fff;
+                margin: 0 0 8px 0;
+                color: rgba($color: #fff, $alpha: 0.9);
+                font-weight: 600;
+            }
+
+
+            .orderType{
+            display: flex;
+
+            button{
+                width: 100%;
+                user-select: none;
+                padding:10px;
+                border:none;
+                color: #fff;
+                font-weight: 600;
+                font-size: 10px;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: 250ms;
+                letter-spacing: 0.78px;
+                background: transparent;
+            }
+
+            button:first-child{
+                border-radius: 5px 0 0 5px;
+            }
+            button:last-child{
+                border-radius: 0 5px 5px 0;
+            }
+        }
+        .marketSelect{
+            .btnMarket{
+                background: rgba($color: #fff, $alpha: 1);
+                color: #1c2a3b;
+            }
+            .btnLimited{
+                background: transparent;
+                border: solid 2px rgba($color: #fff, $alpha: 0.2);
+                border-left: none;
+                color: rgba($color: #fff, $alpha: 0.2);
+            }
+        }
+        .limitSelect{
+            .btnMarket{
+                background: transparent;
+                border: solid 2px rgba($color: #fff, $alpha: 0.2);
+                border-right: none;
+            }
+            .btnLimited{
+                background: rgba($color: #fff, $alpha: 1);
+                color: #1c2a3b;
+            }
+        }
+        }
+        
+    }
+
+}

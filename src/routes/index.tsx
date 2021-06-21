@@ -19,6 +19,7 @@ import Extract from "../pages/Extract";
 import Deposit from "../pages/Deposit";
 import WithDraw from "../pages/WithDraw";
 import Wallets from "../pages/Wallets";
+import Help from "../pages/Help";
 
 export default function Routes() {
 
@@ -62,7 +63,7 @@ export default function Routes() {
             </Route>
 
             <Route path="/help">
-              <div>ajuda</div>
+              <Help/>
             </Route>
           </InternContainer>
         </Switch>

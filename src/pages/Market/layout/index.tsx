@@ -1,5 +1,6 @@
 import React from 'react';
 import BuyOrders from '../../../components/BuyOrders';
+import CreateOrder from '../../../components/CreateOrder';
 import MyOrders from '../../../components/MyOrders';
 import SalesOrders from '../../../components/SalesOrders';
 
@@ -31,7 +32,7 @@ const Layout: React.FC<LayoutPropsMarket> = ({}:LayoutPropsMarket) => {
           <div className="col-lg-2">
             <div className={style.tableContainer}>
               <div className={style.tableItem}>
-                negociação
+                <CreateOrder/>
               </div>
             </div>
           </div>

@@ -90,6 +90,7 @@ const TableSelectCurrency: React.FC = () => {
         <td>Depósito em conta</td>
         <td><PriceFormat value={23242} /></td>
         <td>25%</td>
+        <td>0</td>
       </tr>
     )
   }
@@ -105,6 +106,7 @@ const TableSelectCurrency: React.FC = () => {
             <th>Disponível</th>
             <th>Em reais</th>
             <th>Percentual</th>
+            <th></th>
           </tr>
 
           {RowsTableExample}
