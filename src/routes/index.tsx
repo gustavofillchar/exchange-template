@@ -10,7 +10,6 @@ import Login from '../pages/Login'
 import SignUp from '../pages/SignUp'
 import Dashboard from '../pages/Dashboard'
 import Market from '../pages/Market'
-
 import AppBar from '../components/AppBar'
 import Sidebar from '../components/Sidebar'
 import InternContainer from '../components/InternContainer'

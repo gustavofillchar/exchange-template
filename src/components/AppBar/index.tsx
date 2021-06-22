@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef} from 'react';
+import React, { useState } from 'react';
 import Logo from "../Logo"
 import cx from "classnames"
 import style from './appbar.module.scss';
@@ -6,6 +6,7 @@ import profileExample from "../../assets/images/image.jpeg"
 
 import notifications from "../../assets/images/notifications.svg"
 import settings from "../../assets/images/settings.svg"
+import { useHistory } from 'react-router-dom';
 
 const AppBar: React.FC = () => {
 	const [isCollapse, setCollapse] = useState(false)
@@ -13,6 +14,8 @@ const AppBar: React.FC = () => {
 	const handleMenu = () => {
 		setCollapse(!isCollapse)
 	}
+
+	const history = useHistory()
 
 	return (
 		<div className={style.container}>
@@ -36,8 +39,8 @@ const AppBar: React.FC = () => {
 					<div className={style.arrowAction} onClick={handleMenu}/>
 
 					<div className={cx(style.optionsMenu, isCollapse ? style.optionsMenuCollapsed : null)}>
-						<a href="#">Meu perfil</a>
-						<a href="#">Sair</a>
+						<a >Meu perfil</a>
+						<a href="/signin">Sair</a>						
 					</div>
 				</div>
 			</div>

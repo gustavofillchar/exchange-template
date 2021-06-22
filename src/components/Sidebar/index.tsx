@@ -4,6 +4,7 @@ import style from './sidebar.module.scss';
 import {NavLink} from "react-router-dom"
 
 const Sidebar: React.FC = () => {
+
 	const [collapse, setCollapse] = useState(false)
 
 	const handleSideMenu = () => {
