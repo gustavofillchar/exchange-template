@@ -5,6 +5,8 @@ import CurrencyWithIcon from '../UtilsComponents/CurrencyWithIcon';
 import DateWithHour from '../UtilsComponents/DateWithHour';
 import ButtonSecondary from '../ButtonSecondary';
 import DownloadIcon from '../UtilsComponents/DownloadIcon';
+import SelectorTableButton from '../UtilsComponents/SelectorTableButton';
+import FilterPeriodDate from '../UtilsComponents/FilterPeriodDate';
 
 const ExtractTable: React.FC = () => {
 
@@ -33,6 +35,11 @@ const ExtractTable: React.FC = () => {
 		<div className={style.container}>
 			<div className={style.header}>
 				<h3>Extrato</h3>
+				<div className={style.headerinline}>
+					<FilterPeriodDate/>
+					<SelectorTableButton/>
+					<SelectorTableButton/>
+				</div>
 			</div>
 
 			<div className={style.tableContainer}>

@@ -39,7 +39,10 @@ const MakeWithdraw: React.FC = () => {
 					
 					<p>Enviaremos um comprovante assim que possível</p>
 
-					<input type="text" className={style.inputValue} placeholder="Digite o valor do saque"/>
+					<div className={style.inputGroup}>
+						<input type="text" className={style.inputValue} placeholder="Digite o valor do saque"/>
+						<a>Saldo disponível</a>
+					</div>
 
 					<SmallButton
 						blue={true}

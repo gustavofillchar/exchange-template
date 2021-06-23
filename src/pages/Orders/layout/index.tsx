@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutPropsOrders> = ({}:LayoutPropsOrders) => {
         <div className="row">
 
           <div className="col-lg-12">
-            select
+          
           </div>
 
         </div>

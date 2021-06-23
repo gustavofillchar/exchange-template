@@ -11,7 +11,7 @@ const StepIndicator: React.FC<StepProps> = ({step, maxSteps}:StepProps) => {
 
   const StepTotal = [...Array(maxSteps)].map((_, i) => {
     return (
-      <div className={cx(styles.stepItem, (step - 1) >= i ? styles.stepChecked : null)}/>
+      <div key={i} className={cx(styles.stepItem, (step - 1) >= i ? styles.stepChecked : null)}/>
     )
   }
   );

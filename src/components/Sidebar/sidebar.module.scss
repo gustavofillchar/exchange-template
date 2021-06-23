@@ -19,19 +19,20 @@
 
     .headerClose{
         height: 20px;
-        width: 15px;
-        background-size: contain;
+        width: 100%;
+        background-size: 18px;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right;
         background-image: url("../../assets/icons/close.svg");
         transition: 250ms;
+        margin-right: 30px;
     }
 
     .headerOpen{
         height: 20px;
         width: 20px;
         transition: 250ms;
-        background-size: contain;
+        background-size: 20px;
         background-repeat: no-repeat;
         background-position: center;
         background-image: url("../../assets/icons/collapsedMenu.svg");

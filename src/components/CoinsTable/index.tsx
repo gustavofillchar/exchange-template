@@ -30,9 +30,11 @@ const CoinsTable: React.FC = () => {
 	return (
 		<div className={style.container}>
 			
-			<div className={style.header}>					
-				<h3>Moedas</h3>
-				<StatusPercentage value={-83.0184}/>	
+			<div className={style.header}>			
+				<div className={style.headerinline}>
+					<h3>Moedas</h3>
+					<StatusPercentage value={-83.0184}/>	
+				</div>		
 				<SelectorTableButton/>
 			</div>
 

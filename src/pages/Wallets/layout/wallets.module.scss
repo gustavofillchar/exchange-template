@@ -4,6 +4,7 @@
     flex-direction: column;
     position: relative;
     margin: 0 0 30px 0;
+    user-select: none;
     
     .tableItem{
         overflow-y: auto;
@@ -17,6 +18,17 @@
         .selectedItems:hover{
             background: #3C5471;
             cursor: pointer;
+        }
+
+        .activeItem{
+            background: #fff;
+            color: #000;
+            h1{
+                color:#000;
+            }
+            h2{
+                color:#000;
+            }
         }
     }
 }

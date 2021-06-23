@@ -120,12 +120,26 @@
                 margin: 16px 0;                
             }
 
-            .inputValue{
-                border: 1.5px solid rgba($color: #fff, $alpha: 0.1);
-                background: transparent;
-                border-radius: 6px;
-                padding: 8px;
-                color: #fff;
+            .inputGroup{
+                display: flex;
+                align-items: center;
+                .inputValue{
+                    border: 1.5px solid rgba($color: #fff, $alpha: 0.1);
+                    background: transparent;
+                    border-radius: 6px;
+                    padding: 8px;
+                    color: #fff;
+                    display: flex;
+                    flex: 1;
+                }
+
+                a{
+                    margin-left: 10px;
+                    color: rgba($color: #fff, $alpha: 0.6);
+                    text-decoration: underline;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
             }
 
             .inputValue::placeholder{

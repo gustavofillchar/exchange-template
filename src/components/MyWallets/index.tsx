@@ -36,10 +36,15 @@ const MyWallets: React.FC = () => {
 	return (
 		<div className={style.container}>
 			
-			<div className={style.header}>					
-				<h3>Minhas Carteiras</h3>
-				<StatusPriceDisplay value={122412}/>	
-				<SelectorTableButton/>
+			<div className={style.header}>			
+				<div className={style.headerinline}>
+					<h3>Minhas Carteiras</h3>
+					<StatusPriceDisplay value={122412}/>	
+				</div>		
+				<div className={style.headerinline}>
+					<SelectorTableButton/>
+					<SelectorTableButton/>
+				</div>
 			</div>
 
 			<div className={style.tableContainer}>

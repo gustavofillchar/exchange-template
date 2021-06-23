@@ -23,4 +23,40 @@
         margin: 0 0 10px 0;
     }
 
+    .inputPassword{
+        background: #40546D;
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        outline: none;
+        font-size: 16px;    
+        display: flex;  
+        cursor: pointer;  
+        transition: 300ms all;
+
+        input{
+            background: transparent;
+            padding: 12px;
+            width: 90%;
+        }
+
+        .eyeClose{
+            width: 10%;
+            background-image: url("../../assets/icons/eyeclose.svg");
+            background-size: 22px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 300ms all;
+        }
+
+        .eyeOpen{
+            width: 10%;
+            background-image: url("../../assets/icons/eyeopen.svg");
+            background-size: 22px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 300ms all;
+        }
+    }
+
 }

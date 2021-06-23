@@ -6,6 +6,7 @@ import PriceFormat from '../../../components/UtilsComponents/PriceFormat';
 import SmallButton from '../../../components/SmallButton';
 import ExtractCoinSelected from './components/ExtractCoinSelected';
 import CurrencyWithIcon from '../../../components/UtilsComponents/CurrencyWithIcon';
+import cx from "classnames"
 
 type LayoutPropsWallets = {}
 
@@ -77,25 +78,28 @@ const WalletItem: React.FC = () => {
   )
 }
 
-const TableSelectCurrency: React.FC = () => {
+
+const RowTable: React.FC = () => {
   
   const [active, setActive] = React.useState(false)
-  
-  const RowsTableExample = [...Array(18)].map((_, i) => {
-    return (
-      <tr className={style.selectedItems} >
-        <td>
-          <CurrencyWithIcon hover={active} iconName="btc" currency="Bitcoin" />
-        </td>
-        <td>Depósito em conta</td>
-        <td><PriceFormat value={23242} /></td>
-        <td>25%</td>
-        <td>0</td>
-      </tr>
-    )
-  }
-  );
 
+  const handleItemActive = () => {
+    setActive(!active)
+  }
+  
+  return (
+    <tr onClick={handleItemActive} className={cx(active ? style.activeItem : style.selectedItems)} >
+      <td>
+        <CurrencyWithIcon hover={active} iconName="btc" currency="Bitcoin" />
+      </td>
+      <td>Depósito em conta</td>
+      <td><PriceFormat value={23242} /></td>
+      <td>25%</td>
+    </tr>
+  )
+}
+
+const TableSelectCurrency: React.FC = () => {
 
   return (
     <div className={style.tableContainer}>
@@ -106,10 +110,11 @@ const TableSelectCurrency: React.FC = () => {
             <th>Disponível</th>
             <th>Em reais</th>
             <th>Percentual</th>
-            <th></th>
           </tr>
 
-          {RowsTableExample}
+          <RowTable/>
+          <RowTable/>
+          <RowTable/>
 
         </table>
       </div>
