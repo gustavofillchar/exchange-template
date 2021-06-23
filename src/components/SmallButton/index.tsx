@@ -5,12 +5,12 @@ import style from './smallbutton.module.scss';
 type ButtonProps = {
   children: string,
   onPress(): void,
-  green: boolean,
-  blue: boolean,
-  red: boolean
+  green?: boolean,
+  blue?: boolean,
+  red?: boolean
 }
 
-const SmallButton: React.FC<ButtonProps> = ({children, onPress, green, blue, red} : ButtonProps) => {
+const SmallButton: React.FC<ButtonProps> = ({children, onPress, green = false, blue = false, red = false} : ButtonProps) => {
   
   let cx = classNames.bind(style);
   

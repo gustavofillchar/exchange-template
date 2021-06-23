@@ -15,7 +15,7 @@ const AppBar: React.FC = () => {
 		setCollapse(!isCollapse)
 	}
 
-	const history = useHistory()
+	const handleNav = useHistory()
 
 	return (
 		<div className={style.container}>
@@ -39,7 +39,7 @@ const AppBar: React.FC = () => {
 					<div className={style.arrowAction} onClick={handleMenu}/>
 
 					<div className={cx(style.optionsMenu, isCollapse ? style.optionsMenuCollapsed : null)}>
-						<a >Meu perfil</a>
+						<a onClick={() => handleNav.push("/profile")}>Meu perfil</a>
 						<a href="/signin">Sair</a>						
 					</div>
 				</div>

@@ -1,0 +1,15 @@
+.tableContainer{
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 0 30px 0;
+
+    .tableItem{
+        width: 100%;
+        background: #26374C;
+        border: 1px solid rgba($color: #fff, $alpha: 0.08);
+        border-radius: 5px;
+        height: 100%;
+    }
+}

@@ -19,6 +19,7 @@ import Deposit from "../pages/Deposit";
 import WithDraw from "../pages/WithDraw";
 import Wallets from "../pages/Wallets";
 import Help from "../pages/Help";
+import Profile from "../pages/Profile";
 
 export default function Routes() {
 
@@ -64,6 +65,11 @@ export default function Routes() {
             <Route path="/help">
               <Help/>
             </Route>
+
+            <Route path="/profile">
+              <Profile/>
+            </Route>
+
           </InternContainer>
         </Switch>
 
