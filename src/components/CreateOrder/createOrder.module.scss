@@ -19,7 +19,8 @@
     }
 
     .contain{
-        padding: 10px;
+        padding: 5px 10px;
+        
         .selectButtons{
             display: flex;
 
@@ -49,13 +50,13 @@
                 background: #60BC3F;
             }
             .btnSell{
-                background: #1c2a3b;
+                background: rgba($color: #000, $alpha: 0.2);
                 color: rgba($color: #fff, $alpha: 0.2);
             }
         }
         .sellSelect{
             .btnBuy{
-                background: #1c2a3b;
+                background: rgba($color: #000, $alpha: 0.2);
                 color: rgba($color: #fff, $alpha: 0.2);
             }
             .btnSell{
@@ -85,7 +86,7 @@
             display: flex;
             flex-direction: column;
             padding: 14px 0;
-            border-bottom: 1px solid rgba($color: #fff, $alpha: 0.08);
+            border-top: 1px solid rgba($color: #fff, $alpha: 0.08);
 
             label{
                 font-size: 12px;
@@ -96,7 +97,7 @@
                 
             }
             input{
-                background: #40546D;
+                background: rgba($color: #000, $alpha: 0.13);
                 border: none;
                 color: #fff;
                 padding: 12px;
@@ -123,7 +124,7 @@
             cursor: pointer;
             transition: 250ms;
             letter-spacing: 0.78px;
-            border-radius: 5px;
+            border-radius: 100px;
         }
         .buySelected{
             background: #60BC3F;
@@ -145,9 +146,8 @@
                 font-weight: 600;
             }
 
-
             .orderType{
-            display: flex;
+                display: flex;
 
             button{
                 width: 100%;
@@ -174,24 +174,25 @@
         .marketSelect{
             .btnMarket{
                 background: rgba($color: #fff, $alpha: 1);
-                color: #1c2a3b;
+                color: rgba($color: #000, $alpha: 0.7)
             }
             .btnLimited{
                 background: transparent;
-                border: solid 2px rgba($color: #fff, $alpha: 0.2);
+                border: solid 2px rgba($color: #fff, $alpha: 0.1);
                 border-left: none;
-                color: rgba($color: #fff, $alpha: 0.2);
+                color: rgba($color: #fff, $alpha: 0.1);
             }
         }
         .limitSelect{
             .btnMarket{
                 background: transparent;
-                border: solid 2px rgba($color: #fff, $alpha: 0.2);
+                border: solid 2px rgba($color: #fff, $alpha: 0.1);
                 border-right: none;
+                color: rgba($color: #fff, $alpha: 0.1)
             }
             .btnLimited{
                 background: rgba($color: #fff, $alpha: 1);
-                color: #1c2a3b;
+                color: rgba($color: #000, $alpha: 0.7)
             }
         }
         }

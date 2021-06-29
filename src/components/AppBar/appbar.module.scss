@@ -1,10 +1,10 @@
 .container{
-    background: #2C405A;
+    background: var(--secondary-app-bar);
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #425b7c;
+    border-bottom: 1px solid var(--secondary-bg-color);
     padding:0 10px;
     position: fixed;
     right: 0;
@@ -33,8 +33,8 @@
             align-items: center;
             justify-content: center;
             padding:0 10px;
-            border-left: 1.2px solid rgba($color: #fff, $alpha: 0.2);    
-            border-right: 1.2px solid rgba($color: #fff, $alpha: 0.2); 
+            border-left: 1.2px solid var(--secondary-bg-color);    
+            border-right: 1.2px solid var(--secondary-bg-color); 
             transition: 0.3s;
         }
         .iconAction:hover{
@@ -43,7 +43,7 @@
         }
         .iconAction:first-child{
             padding:0 10px;
-            border-left: 1.2px solid rgba($color: #fff, $alpha: 0.2);    
+            border-left: 1.2px solid var(--secondary-bg-color);    
             border-right: none;    
             display: flex;
             align-items: center;
@@ -104,7 +104,7 @@
                 position: absolute;
                 top: 42px;
                 right: 0;
-                background: #567297;
+                background: var(--primary-bg-dark-color);
                 width: 100%;
                 border-radius: 4px;
                 display: flex;
@@ -119,10 +119,12 @@
                     text-decoration: none;
                     font-weight: 600;
                 }
+                
                 a:hover{
-                    background: #4b678d;
+                    background: var(--secondary-bg-color);
                     border-radius: 4px;
                 }
+
                 a:nth-child(1){
                     border-bottom: solid 1px rgba($color: #fff, $alpha: 0.2);
                 }

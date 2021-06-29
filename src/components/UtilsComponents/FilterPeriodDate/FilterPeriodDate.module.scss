@@ -36,8 +36,8 @@
     .modalSelector{
         position: absolute;
         top: 28px;
-       right: 0;
-        background: #567297;
+        right: 0;
+        background:var(--primary-bg-dark-color);
         width: auto;
         border-radius: 4px;
         display: flex;
@@ -56,13 +56,16 @@
             cursor: pointer;
             border-bottom: solid 1px rgba($color: #fff, $alpha: 0.2);
         }
+
         a:hover{
-            background: #4b678d;
+            background:var(--secondary-bg-color);
             border-radius: 4px;
         }
+
         a:last-child{
             border-bottom:none;
         }
+        
     }
     .modalSelectorCollapsed{
         transition: 200ms all;

@@ -1,0 +1,47 @@
+.container{
+    position: relative;
+    color: #fff;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms all;
+
+    .containItem{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 360px;
+        height: 500px;
+        background: var(--color-head-table-primary);
+        border: 1px solid rgba($color: #fff, $alpha: 0.08);
+        border-radius: 5px;
+        z-index: 20;
+    }
+}
+
+.containerShow{
+    transition: 300ms all;
+    opacity: 1;
+    visibility: visible;
+}
+
+.backLayer{
+    transition: 300ms all;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.backLayerOpen{
+    transition: 300ms all;
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: blur(9px); 
+    background-color: rgba($color: #000, $alpha: 0.6);
+}

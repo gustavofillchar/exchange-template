@@ -5,7 +5,7 @@
     margin: 10px 0;
 
     input{
-        background: #40546D;
+        background: rgba($color: #000, $alpha: 0.2);
         border: none;
         color: #fff;
         padding: 12px;
@@ -24,7 +24,7 @@
     }
 
     .inputPassword{
-        background: #40546D;
+        background: rgba($color: #000, $alpha: 0.2);
         border: none;
         color: #fff;
         border-radius: 4px;

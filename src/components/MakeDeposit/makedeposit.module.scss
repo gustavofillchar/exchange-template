@@ -132,11 +132,37 @@
                 color: rgba($color: #fff, $alpha: 0.2);
             }
             
-            .fileInput{
-                border: 1.5px solid rgba($color: #fff, $alpha: 0.1);
-                padding: 16px;
-                border-radius: 8px;
-                margin: 16px 0 0 0;
+            .boxFileUpload{
+                border: 1px solid rgba($color: #fff, $alpha: 0.08);
+                border-radius: 5px;
+                position: relative;
+                margin: 12px 0 0 0;
+    
+                .iconUpload{
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    top: 45%;
+                    height: 30px;
+                    width: 30px;
+                    background: url("../../assets/icons/uploadItem.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                }
+            }
+    
+            .typeFile{
+                background: transparent;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                color: rgba($color: #fff, $alpha: 0.7);
+                text-align: center;
+                padding: 70px 10px 10px 10px;
+            }
+    
+            .typeFile::-webkit-file-upload-button{
+                display: none;
             }
 
             button{

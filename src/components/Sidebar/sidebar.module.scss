@@ -5,7 +5,7 @@
     height: calc(100vh - 60px);
     left: 0;
     box-sizing: border-box;
-    background: #1C293B;
+    background: var(--secondary-bg-dark-2-color);
     transition: 300ms all;
     z-index: 2;
     display: flex;
@@ -125,7 +125,7 @@
 
     .itemMenuActive{
         background-color: rgba($color: #000, $alpha: 0.1);
-        border-left: 4px solid #0093EE;
+        border-left: 4px solid var(--active-item-color);
         opacity: 1;
     }
 }
@@ -152,5 +152,5 @@
     opacity: 1;
     visibility: visible;
     backdrop-filter: blur(9px); 
-    background-color: rgba($color: #0093EE, $alpha: 0);
+    background-color: rgba($color: #000, $alpha: 0.6);
 }

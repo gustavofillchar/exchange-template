@@ -15,7 +15,10 @@ const SelfieBox: React.FC = () => {
 				<div className={style.formSendImage}>
 					<h3>Atualizado há 5 meses</h3>
 					<p>Tire uma selfie segurando seu documento de identificação</p>
-					<input type="file" className={style.fileInput} />
+					<div className={style.boxFileUpload}>
+						<div className={style.iconUpload} />
+						<input className={style.typeFile} type="file" id="fileAdd" accept="image/png, image/jpeg" />
+					</div>
 				</div>
 				<SmallButton blue onPress={() => alert("Cadastrar")}>Cadastrar</SmallButton>
 

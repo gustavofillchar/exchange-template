@@ -32,7 +32,10 @@ const FormTicket: React.FC = () => {
 
         <div className={style.formGroup}>
           <label htmlFor="fileAdd">Anexo</label>
-          <input type="file" id="fileAdd" />
+          <div className={style.boxFileUpload}>
+            <div className={style.iconUpload} />
+            <input className={style.typeFile} type="file" id="fileAdd" accept="image/png, image/jpeg"/>
+          </div>
         </div>
 
         <div className={style.formGroup}>

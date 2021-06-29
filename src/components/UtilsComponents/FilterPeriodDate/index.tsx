@@ -4,16 +4,12 @@ import style from "./FilterPeriodDate.module.scss"
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { DateRange } from 'react-date-range';
-import { Locale, format } from "date-fns";
+import { format } from "date-fns";
 import ptLocale from 'date-fns/locale/pt'
-
-type SelectorProps = {
-  
-}
-
+ 
 const FilterPeriodDate: React.FC = () => {
   const [isCollapse, setIsCollapse] = useState(false)
-  const [customPeriod, setCustomPeriod] = useState(false)
+  const [customPeriod, setCustomPeriod] = useState(true)
   const [state, setState] = useState([
     {
       startDate: new Date(),
@@ -57,7 +53,7 @@ const FilterPeriodDate: React.FC = () => {
 
         <DateRange
           editableDateInputs={true}
-          onChange={item => setState([item.selection])}
+          onChange={item => console.log(item)}
           moveRangeOnFirstSelection={false}
           ranges={state}
           locale={ptLocale}

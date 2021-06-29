@@ -8,13 +8,12 @@ import HistoryMovement from "../../../components/HistoryMovement"
 import MyWallets from '../../../components/MyWallets';
 import CoinsTable from '../../../components/CoinsTable';
 
-type LayoutPropsDashboard = {
-  
-}
+type LayoutPropsDashboard = {}
 
 const Layout: React.FC<LayoutPropsDashboard> = ({}:LayoutPropsDashboard) => {
   return (
     <div>
+      
       <div className="container-fluid">
 
         <div className="row">

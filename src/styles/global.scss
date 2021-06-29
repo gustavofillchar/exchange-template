@@ -1,3 +1,14 @@
+:root {
+    --primary-bg-color: #3e689e;
+    --primary-bg-dark-color: #4b678d;
+    --secondary-bg-color: #3C5471;
+    --secondary-bg-dark-color: #213144;
+    --secondary-bg-dark-2-color: #192738;
+    --active-item-color: #0093EE;
+    --color-head-table-primary:#26374C;
+    --secondary-app-bar:#2C405A;    
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -11,7 +22,7 @@ table {
     color: #fff;
         
     th{
-        background-color: #213144;
+        background-color: var(--secondary-bg-dark-color);
         padding: 14px 12px;
         position: sticky;
         top: 0;
@@ -31,9 +42,50 @@ table {
     }
 
     tr:nth-child(even) {
-        background-color: #3C5471;
+        background-color: var(--secondary-bg-color);
     }
+
     tr:last-child{
         border-bottom: 1px solid rgba($color: #fff, $alpha: 0.08);
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  transition: 200ms;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  transition: 200ms;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-bg-color);
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+  transition: 200ms;
+}
+
+/* Track */
+::-webkit-scrollbar-track:horizontal {
+    background: transparent;
+    transition: 200ms;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:horizontal {
+    background: var(--primary-bg-color);
+    transition: 200ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-bg-dark-2-color);
+    transition: 200ms;
 }

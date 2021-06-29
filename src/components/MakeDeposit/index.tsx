@@ -7,21 +7,21 @@ const MakeDeposit: React.FC = () => {
 
 	return (
 		<div className={style.container}>
-			
-			<div className={style.header}>					
+
+			<div className={style.header}>
 				<h3>Dados para depósito</h3>
 			</div>
 
 			<div className={style.containerItem}>
-				
+
 				<div className={style.selectBankContainer}>
-					<div className={style.iconLeft}/>
-					<div className={style.iconRight}/>
+					<div className={style.iconLeft} />
+					<div className={style.iconRight} />
 
 					<div className={style.bankItem}>
-						
+
 						<div className={style.bankImage}>
-							<img src={imageExample} alt="Logo do Banco"/>
+							<img src={imageExample} alt="Logo do Banco" />
 						</div>
 
 						<div className={style.descriptionBox}>
@@ -36,12 +36,15 @@ const MakeDeposit: React.FC = () => {
 
 				<div className={style.infoDepositContainer}>
 					<h4>Fez um depósito?</h4>
-					
+
 					<p>Por favor, informe o valor e envie o comprovante abaixo.</p>
 
-					<input type="text" className={style.inputValue} placeholder="Digite o valor do depósito"/>
-					
-					<input type="file" className={style.fileInput}/>
+					<input type="text" className={style.inputValue} placeholder="Digite o valor do depósito" />
+
+					<div className={style.boxFileUpload}>
+						<div className={style.iconUpload} />
+						<input className={style.typeFile} type="file" id="fileAdd" accept="image/png, image/jpeg" />
+					</div>
 
 					<SmallButton
 						blue={true}
@@ -53,7 +56,7 @@ const MakeDeposit: React.FC = () => {
 					</SmallButton>
 
 				</div>
-				
+
 
 			</div>
 
